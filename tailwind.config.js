@@ -1,13 +1,10 @@
 module.exports = {
   content: [
-    "./*.{html,php}",
-    "./**/*.{html,php}",
+    "./*.php",
+    "./**/*.php",
   ],
   theme: {
     extend: {},
   },
-  plugins: [
-    require('daisyui'),
-  ],
-}
-
+  plugins: [require('daisyui')],
+};
