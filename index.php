@@ -3,6 +3,7 @@
     //   include('/asstes/images/login_background.avif');
       $img = './asstes/images/login-bg.png';
       $logo = './asstes/images/Pharmanest1.png';
+      $background = './asstes/images/login-background.jpg';
      ?>
 
 
@@ -15,19 +16,24 @@
     <title>login</title>
     <style>
         .main-container{
-            background-color: lightcyan;
+            background: linear-gradient(to left, rgba(255,255,255,0) 40%,
+              rgba(255,255,255,1)), url('<?php echo $background; ?>');
+            background-size: cover;       /* Makes the image cover the entire element */
+            background-position: center;  /* Centers the image */
+            background-repeat: no-repeat; /* Prevents tiling */
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            
         }
     </style>
 </head>
 <body>
    
-<div class="main-container">
+<div class="main-container bg-opacity-20">
     
-<section class="container flex justify-center align-middle mx-auto">
+<section style="box-shadow: rgba(0,0,0,0.3)2px 3px 10px 3px; border-radius: 25px;padding:30px 10px;" class="container flex justify-center align-middle mx-auto">
 
 <div class="form-container flex justify-center align-middle mx-auto">
     <form action="" method="post">
