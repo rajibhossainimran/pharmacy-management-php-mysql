@@ -15,31 +15,36 @@
 
     // when signin button click then check email and password in database 
     if (isset($_POST['btnLogin'])) {
-        // Retrieve form data
-        $role = $_POST['user-roll'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-
+        // Retrieve form data and sanitize inputs
+        $role = mysqli_real_escape_string($db, $_POST['user-roll']);
+        $email = mysqli_real_escape_string($db, $_POST['email']);
+        $password = mysqli_real_escape_string($db, $_POST['password']);
+    
+        // Check if all required fields are provided
         if ($email && $password && $role) {
-            $query = "SELECT * FROM {$role} WHERE email='{$email}' AND password='{$password}'";
-            $result = mysqli_query($db, $query);
-        
-            // Check if the query was successful
-            if ($result) {
-                // Fetch and display data
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo "ID: " . $row['id'] . "<br>";
-                    echo "Email: " . $row['email'] . "<br>";
-                    echo "Password: " . $row['password'] . "<br>";
-                    echo "Role: " . $row['role'] . "<br><br>";
-                }
+            $query = "SELECT * FROM {$role} WHERE email='{$email}' AND password='{$password}'LIMIT 1";
+            $user_result = mysqli_query($db, $query);
+    
+            // Check if query was successful and if data exists
+            if ($user_result && mysqli_num_rows($user_result) > 0) {
+                $user = mysqli_fetch_assoc($user_result); // Fetch user data
+    
+                // Store user data in session
+                $_SESSION['role'] = $role;
+                $_SESSION['id'] = $user['id']; // Assuming your table has an 'id' column
+    
+                // Redirect to dashboard
+                header("Location: dashboard.php");
+                exit(); // Ensure no further code executes
             } else {
-                // Handle query failure
-                echo "Error: " . mysqli_error($db);
+                // Invalid login credentials
+                $msg = "Invalid email, password, or role.";
             }
+        } else {
+            $msg = "Please fill in all required fields.";
         }
-
     }
+    
 
 ?>
 
@@ -54,9 +59,9 @@
         .main-container{
             background: linear-gradient(to left, rgba(255,255,255,0) 40%,
               rgba(255,255,255,1)), url('<?php echo $background; ?>');
-            background-size: cover;       /* Makes the image cover the entire element */
-            background-position: center;  /* Centers the image */
-            background-repeat: no-repeat; /* Prevents tiling */
+            background-size: cover; 
+            background-position: center;  
+            background-repeat: no-repeat; 
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -74,6 +79,7 @@
 <div class="form-container flex justify-center align-middle mx-auto">
     <form action="" method="post">
     <img src="<?php echo $logo; ?>" alt="logo" width="450vh" height="auto">
+            
         <!-- select user part start  --> 
             <label class="input input-bordered flex items-center gap-2 border-teal-600 text-teal-900 text-xl">
             <svg
@@ -86,8 +92,8 @@
             </svg>
             <select name="user-roll" class="select select-bordered w-full border-2 border-teal-600 rounded-md text-teal-900 text-xl focus:outline-none focus:ring-2 focus:ring-teal-500" required>
                     <option value="admin">Admin</option>
-                    <option value="managers">Manager</option>
-                    <option value="salesmans">Salesman</option>
+                    <option value="manager">Manager</option>
+                    <option value="salesman">Salesman</option>
                     </select>
             </label>
 
@@ -123,6 +129,13 @@
             </svg>
             <input type="password" class="grow text-xl font-semibold" placeholder="password" name="password" required/>
             </label>
+            <!-- display error  -->
+            <div>
+              <p class="text-red-900 font-semibold text-lg text-center">
+                 <?php echo isset($msg) ? $msg : ''; ?>
+              </p>
+           </div>
+
             <button class="btn bg-teal-900 hover:bg-teal-600 text-white px-8 my-4 rounded-3xl" type="submit" name="btnLogin">SIGNIN</button>
     </form>
 </div>
