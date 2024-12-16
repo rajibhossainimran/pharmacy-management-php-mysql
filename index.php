@@ -1,11 +1,10 @@
- <!-- import images  -->
- <?php 
-    //   include('/asstes/images/login_background.avif');
-      $img = './asstes/images/login-bg.png';
-      $logo = './asstes/images/Pharmanest1.png';
-      $background = './asstes/images/login-background.jpg';
-     ?>
+
 <?php 
+    session_start();
+     //   include('/asstes/images/login_background.avif');
+     $img = './asstes/images/login-bg.png';
+     $logo = './asstes/images/Pharmanest1.png';
+     $background = './asstes/images/login-background.jpg';
     // include database and set connection 
     include_once "./config/config.php";
     $db = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
