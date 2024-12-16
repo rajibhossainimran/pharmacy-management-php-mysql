@@ -12,6 +12,35 @@
     if(! $db){
         throw new Exception('Database connection failed: ' . mysqli_connect_error());
     }
+
+    // when signin button click then check email and password in database 
+    if (isset($_POST['btnLogin'])) {
+        // Retrieve form data
+        $role = $_POST['user-roll'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        if ($email && $password && $role) {
+            $query = "SELECT * FROM {$role} WHERE email='{$email}' AND password='{$password}'";
+            $result = mysqli_query($db, $query);
+        
+            // Check if the query was successful
+            if ($result) {
+                // Fetch and display data
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "ID: " . $row['id'] . "<br>";
+                    echo "Email: " . $row['email'] . "<br>";
+                    echo "Password: " . $row['password'] . "<br>";
+                    echo "Role: " . $row['role'] . "<br><br>";
+                }
+            } else {
+                // Handle query failure
+                echo "Error: " . mysqli_error($db);
+            }
+        }
+
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +84,7 @@
                 <path
                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
             </svg>
-            <select name="user-roll" class="select select-bordered w-full border-2 border-teal-600 rounded-md text-teal-900 text-xl focus:outline-none focus:ring-2 focus:ring-teal-500">
+            <select name="user-roll" class="select select-bordered w-full border-2 border-teal-600 rounded-md text-teal-900 text-xl focus:outline-none focus:ring-2 focus:ring-teal-500" required>
                     <option value="admin">Admin</option>
                     <option value="managers">Manager</option>
                     <option value="salesmans">Salesman</option>
@@ -77,7 +106,7 @@
                 <path
                 d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
             </svg>
-            <input type="text" class="grow text-xl font-semibold" placeholder="Email" name="email" />
+            <input type="text" class="grow text-xl font-semibold" placeholder="Email" name="email" required/>
             </label>
             <!-- password part start  -->
             <label class="text-xl font-medium my-3 block" for="password">Password</label>
@@ -92,7 +121,7 @@
                 d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
                 clip-rule="evenodd" />
             </svg>
-            <input type="password" class="grow text-xl font-semibold" placeholder="password" name="password"/>
+            <input type="password" class="grow text-xl font-semibold" placeholder="password" name="password" required/>
             </label>
             <button class="btn bg-teal-900 hover:bg-teal-600 text-white px-8 my-4 rounded-3xl" type="submit" name="btnLogin">SIGNIN</button>
     </form>
