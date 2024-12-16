@@ -5,7 +5,14 @@
       $logo = './asstes/images/Pharmanest1.png';
       $background = './asstes/images/login-background.jpg';
      ?>
-
+<?php 
+    // include database and set connection 
+    include_once "./config/config.php";
+    $db = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
+    if(! $db){
+        throw new Exception('Database connection failed: ' . mysqli_connect_error());
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,11 +55,10 @@
                 <path
                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
             </svg>
-            <select class="select select-bordered w-full border-2 border-teal-600 rounded-md text-teal-900 text-xl focus:outline-none focus:ring-2 focus:ring-teal-500">
-                    <option disabled selected>Select user</option>
-                    <option>Admin</option>
-                    <option>Manager</option>
-                    <option>Salesman</option>
+            <select name="user-roll" class="select select-bordered w-full border-2 border-teal-600 rounded-md text-teal-900 text-xl focus:outline-none focus:ring-2 focus:ring-teal-500">
+                    <option value="admin">Admin</option>
+                    <option value="managers">Manager</option>
+                    <option value="salesmans">Salesman</option>
                     </select>
             </label>
 
