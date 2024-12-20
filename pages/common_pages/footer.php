@@ -1,7 +1,7 @@
-<footer class="app-footer"> <!--begin::To the end-->
-            <div class="float-end d-none d-sm-inline">Anything you want</div> <!--end::To the end--> <!--begin::Copyright--> <strong>
-                Copyright &copy; 2014-2024&nbsp;
-                <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
+<footer style="background-color: #004c4c;" class="app-footer text-white-50"> <!--begin::To the end-->
+            <div class="float-end d-none d-sm-inline">Developed by Rajib</div> <!--end::To the end--> <!--begin::Copyright--> <strong>
+                Copyright &copy; 2024-25&nbsp;
+                <a href="https://adminlte.io" class="text-decoration-none text-white">Pharmanest</a>.
             </strong>
             All rights reserved.
             <!--end::Copyright-->
