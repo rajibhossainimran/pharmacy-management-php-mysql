@@ -13,6 +13,10 @@
         <!--Sidebar part end-->
         
       <!-- main part start  -->
+
+      <?php 
+       include("./pages/home.php");
+       ?>
       <!-- main part end -->
 
 

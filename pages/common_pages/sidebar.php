@@ -1,16 +1,16 @@
 <aside style="background-color: #002d2d" class="app-sidebar shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
-            <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="./index.html" class="brand-link"> <!--begin::Brand Image--> <img src="./AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image opacity-75 shadow"> <!--end::Brand Image--> <!--begin::Brand Text--> <span class="brand-text fw-light">AdminLTE 4</span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
+            <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="./index.html" class="brand-link"> <!--begin::Brand Image--> <img src="../img/user2-160x160.jpg" alt="AdminLTE Logo" ></a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
             <div class="sidebar-wrapper">
                 <nav class="mt-2"> <!--begin::Sidebar Menu-->
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
-                        <li class="nav-item menu-open"> <a href="#" class="nav-link active"> <i class="nav-icon bi bi-speedometer"></i>
+                        <li class="nav-item menu-open"> <a href="#" class="nav-link active"> <i class="bi bi-house-door fs-4"></i></i>
                                 <p>
                                     Dashboard
                                 </p>
                             </a>
                            
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-cart4"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-cart4 fs-4"></i>
                                 <p>
                                    Purchase
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -26,7 +26,7 @@
                                 
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-capsule-pill"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-capsule-pill fs-4"></i>
                                 <p>
                                    Medicine
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -42,7 +42,7 @@
                                 
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-person-lines-fill"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-person-lines-fill fs-4"></i>
                                 <p>
                                    Supplier
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -61,7 +61,7 @@
                                 
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-receipt-cutoff"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-receipt-cutoff fs-4"></i>
                                 <p>
                                    Invoice
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -77,7 +77,7 @@
                                 
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-backpack4-fill"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-backpack4-fill fs-4"></i>
                                 <p>
                                    Return
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -97,7 +97,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-shop"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"> <i class="bi bi-shop fs-4"></i>
                                 <p>
                                    Stock
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -116,7 +116,7 @@
                                 
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-people-fill"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-people-fill fs-4"></i>
                                 <p>
                                    Customer
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -134,7 +134,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-book"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-book fs-4"></i>
                                 <p>
                                    Report
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -159,7 +159,7 @@
                                 
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-person-workspace"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-person-workspace fs-4"></i>
                                 <p>
                                    Role
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -177,7 +177,7 @@
                                     </a> </li>
                             </ul>
                         </li>
-                        <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-gear"></i>
+                        <li class="nav-item"> <a href="#" class="nav-link"><i class="bi bi-gear fs-4"></i>
                                 <p>
                                    Setting
                                     <i class="nav-arrow bi bi-chevron-right"></i>
@@ -197,7 +197,7 @@
                         </li>
                         
                         
-                        <li class="nav-item"> <a href="./generate/theme.html" class="nav-link"> <i class="nav-icon bi bi-palette"></i>
+                        <li class="nav-item"> <a href="./generate/theme.html" class="nav-link"> <i class="nav-icon bi bi-palette fs-4"></i>
                                 <p>Theme Generate</p>
                             </a> </li>
                       
