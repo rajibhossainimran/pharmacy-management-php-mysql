@@ -2,6 +2,7 @@
 <html lang="en"> <!--begin::Head-->
 
 <head>
+<!-- <link rel="icon" type="image/png" href="./Pharmanest1.png"> -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Dashboard</title><!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,6 +74,8 @@
                                 </div> <!--end::Message-->
                             </a>
                             <div class="dropdown-divider"></div> <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjclDv0e9IVQdcKL5CgI8DITEgglEavaKqww&s" alt="User Avatar">
+
                         </div>
                     </li> <!--end::Messages Dropdown Menu--> <!--begin::Notifications Dropdown Menu-->
                     <li class="nav-item dropdown"> <a class="nav-link" data-bs-toggle="dropdown" href="#" title="Stock Out"> <i class="bi bi-exclamation-triangle-fill fs-3"></i> <span class="navbar-badge badge text-bg-warning fs-6">0</span> </a>
