@@ -25,7 +25,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-3 col-sm-6 col-12">
+      <div class="col-xl-3 col-sm-6 col-12 mb-4">
       <div class="card">
       <i class=""></i>
           <div class="card-content">
@@ -44,7 +44,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-3 col-sm-6 col-12">
+      <div class="col-xl-3 col-sm-6 col-12 mb-4">
       <div class="card">
           <div class="card-content">
             <div class="card-body">
@@ -85,29 +85,73 @@
   </section>
 
   <section>
-  <div class="row">
+  <div class="row mt-5 mb-5">
     <div class="col-xl-3 col-sm-6 col-12 mb-4"> 
-      <div style="background: linear-gradient(90deg, rgba(59,214,198,1) 0%, rgba(0,76,76,1) 100%);" class="d-flex justify-content-around align-items-center p-2 ">
+      <div style="background-color:#0b5345; border-radius:15px;" class="d-flex justify-content-around align-items-center p-3">
         <div>
-        <i style="font-size: 60px;" class="bi bi-capsule-pill"></i>
+          <i 
+          style="font-size: 60px; border-radius: 50%;" 
+          class="bi bi-capsule-pill text-info-emphasis d-block px-3 py-2 bg-light">
+        </i>
+
         </div>
-        <div>
-            <h4 class="fw-semibold">Total Medicine</h4>
-            <h2 class="text-center">55</h2>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h4 class="fw-semibold text-white">Total Medicine</h4>
+            <h2 class="text-center text-white">55</h2>
+            <a class="text-info" href="#">show details</a>
         </div>
       </div>
 
       </div>
-      <div class="col-xl-3 col-sm-6 col-12">
+      <div class="col-xl-3 col-sm-6 col-12 mb-4">
     
+      <div style="background-color:#0b5345; border-radius:15px;" class="d-flex justify-content-around align-items-center p-3">
+        <div>
+          <i 
+          style="font-size: 60px; border-radius: 50%;" 
+          class="bi bi-cart-x text-warning-emphasis  d-block px-3 py-2 bg-light">
+        </i>
+
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h4 class="fw-semibold text-white">Out of Stock</h4>
+            <h2 class="text-center text-white">00</h2>
+            <a class="text-info" href="#">show details</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 col-12 mb-4">
+      <div style="background-color:#0b5345; border-radius:15px;" class="d-flex justify-content-around align-items-center p-3">
+        <div>
+          <i 
+          style="font-size: 60px; border-radius: 50%;" 
+          class="bi bi-exclamation-triangle text-danger d-block px-3 py-2 bg-light">
+        </i>
+
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h4 class="fw-semibold text-white">Expired Medicine</h4>
+            <h2 class="text-center text-white">00</h2>
+            <a class="text-info" href="#">show details</a>
+        </div>
+      </div>
 
       </div>
-      <div class="col-xl-3 col-sm-6 col-12">
-   
+      <div class="col-xl-3 col-sm-6 col-12 mb-4">
+      <div style="background-color:#0b5345; border-radius:15px;" class="d-flex justify-content-around align-items-center p-3">
+        <div>
+          <i 
+          style="font-size: 60px; border-radius: 50%;" 
+          class="bi bi-person-exclamation text-primary-emphasis d-block px-3 py-2 bg-light">
+        </i>
 
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h4 class="fw-semibold text-white">Due Customer</h4>
+            <h2 class="text-center text-white">00</h2>
+            <a class="text-info" href="#">show details</a>
+        </div>
       </div>
-      <div class="col-xl-3 col-sm-6 col-12">
- 
       </div>
     </div>
   </section>
