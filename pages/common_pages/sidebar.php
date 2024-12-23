@@ -34,10 +34,10 @@
                             </a>
                             <ul class="nav nav-treeview">
                             <li class="nav-item"> <a href="./widgets/info-box.html" class="nav-link"><i class="bi bi-arrow-right-short ms-3"></i>
-                                        <p>Add</p>
+                                        <p>Add New Medicine</p>
                                     </a> </li>
                                     <li class="nav-item"> <a href="./widgets/info-box.html" class="nav-link"><i class="bi bi-arrow-right-short ms-3"></i>
-                                        <p>Category List</p>
+                                        <p>Medicine List</p>
                                     </a> </li>
                                 <li class="nav-item"> <a href="./widgets/small-box.html" class="nav-link"><i class="bi bi-arrow-right-short ms-3"></i>
                                         <p>Add Category</p>
