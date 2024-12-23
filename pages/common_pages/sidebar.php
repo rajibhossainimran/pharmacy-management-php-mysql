@@ -39,6 +39,12 @@
                                 <li class="nav-item"> <a href="./widgets/info-box.html" class="nav-link"><i class="bi bi-arrow-right-short ms-3"></i>
                                         <p>Category List</p>
                                     </a> </li>
+                                    <li class="nav-item"> <a href="./widgets/info-box.html" class="nav-link"><i class="bi bi-arrow-right-short ms-3"></i>
+                                        <p>Add Unit</p>
+                                    </a> </li>
+                                    <li class="nav-item"> <a href="./widgets/info-box.html" class="nav-link"><i class="bi bi-arrow-right-short ms-3"></i>
+                                        <p>Unit List</p>
+                                    </a> </li>
                                 
                             </ul>
                         </li>
