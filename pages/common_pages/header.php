@@ -2,7 +2,7 @@
 <html lang="en"> <!--begin::Head-->
 
 <head>
-<link rel="icon" type="image/png" href="./pages/common_pages/Pharmanest1.png">
+<link rel="icon" type="image/png" href="./asstes/images/Pharmanest (1).png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Dashboard</title><!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
