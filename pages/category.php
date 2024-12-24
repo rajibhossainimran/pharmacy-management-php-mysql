@@ -1,4 +1,6 @@
+<?php 
 
+?>
     <!-- add category section part start  -->
     <div class="container mt-5">
     <!-- Form Section -->
@@ -6,21 +8,21 @@
       <div class="col-lg-8">
         <div class="card">
           <div class="card-header">
-            <h4>Add Categories</h4>
+            <h4>Add Category</h4>
           </div>
           <div class="card-body">
             <div id="add-brand-messages"></div>
             <form class="form-horizontal" method="POST" id="submitBrandForm" action="php_action/createCategories.php" enctype="multipart/form-data">
               <!-- Categories Name -->
               <div class="form-group row">
-                <label class="col-sm-3 control-label" for="categoriesName">Categories Name</label>
+                <label class="col-sm-3 control-label" for="categoriesName">Category Name</label>
                 <div class="col-sm-9">
                   <input 
                     type="text" 
                     class="form-control" 
                     id="categoriesName" 
                     name="category" 
-                    placeholder="Categories Name" 
+                    placeholder="Category Name" 
                     required 
                     pattern="^[a-zA-Z\s]+$" 
                     title="Only alphabets are allowed.">
@@ -38,6 +40,7 @@
                   </select>
                 </div>
               </div>
+
 
               <!-- Submit Button -->
               <div class="form-group row">
