@@ -15,7 +15,8 @@
       <!-- main part start  -->
 
       <?php 
-       include("./pages/home.php");
+      //  include("./pages/home.php");
+       include("./pages/category.php");
        ?>
       <!-- main part end -->
 

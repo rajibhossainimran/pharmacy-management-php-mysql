@@ -1,11 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>category</title>
-</head>
-<body>
-    <h1>Add Category</h1>
-</body>
-</html>
+
+    <!-- add category section part start  -->
+    <div class="container mt-5">
+    <!-- Form Section -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-header">
+            <h4>Add Categories</h4>
+          </div>
+          <div class="card-body">
+            <div id="add-brand-messages"></div>
+            <form class="form-horizontal" method="POST" id="submitBrandForm" action="php_action/createCategories.php" enctype="multipart/form-data">
+              <!-- Categories Name -->
+              <div class="form-group row">
+                <label class="col-sm-3 control-label" for="categoriesName">Categories Name</label>
+                <div class="col-sm-9">
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    id="categoriesName" 
+                    name="category" 
+                    placeholder="Categories Name" 
+                    required 
+                    pattern="^[a-zA-Z\s]+$" 
+                    title="Only alphabets are allowed.">
+                </div>
+              </div>
+
+              <!-- Status -->
+              <div class="form-group row">
+                <label class="col-sm-3 control-label" for="categoriesStatus">Status</label>
+                <div class="col-sm-9">
+                  <select class="form-control" id="categoriesStatus" name="categoriesStatus" required>
+                    <option value="">-SELECT-</option>
+                    <option value="1">Available</option>
+                    <option value="2">Not Available</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group row">
+                <div class="col-sm-12 text-end mt-3">
+                  <button type="submit" name="create" id="createCategoriesBtn" class="btn btn-success">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                
